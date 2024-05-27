@@ -40,11 +40,14 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background: #222;
     color: #fff;
 }
-#next-btn {
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
     background: #001e4d;
     color: #fff;
     font-weight: 500;
@@ -55,4 +58,10 @@ body {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect {
+    background: #ff9393;
 }
